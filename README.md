@@ -1,0 +1,1 @@
+# Amazon Theme for Magento 2

@@ -1,0 +1,24 @@
+{
+  "name": "pronko/amazon-theme-magento-2",
+  "description": "Amazon Theme clone for Magento 2",
+  "type": "magento2-theme",
+  "version": "0.1.0",
+  "require": {
+    "magento/theme-frontend-blank": "100.2.*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  ],
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}

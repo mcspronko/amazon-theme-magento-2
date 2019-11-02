@@ -1,0 +1,132 @@
+<?php
+
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div class="content-container">
+    <div class="header-banner">
+        <div class="header-banner__slider">
+            <div class="banner banner-slide-1">
+                <div class="header-text">Happy Holiday Deals</div>
+                <div class="sub-header-text">Save on decor, gifts, and more </div>
+            </div>
+            <div class="content-element-container center-block">
+                <div class="header-banner__deals">
+                    <div class="deal">
+                        <div class="deal__element header-banner__deal-1">
+                            <div class="header text">Holiday Deals on Fashion</div>
+                            <img class="deal-image" src="<?= $block->getViewFileUrl('images/fashion.png'); ?>" />
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <div class="deal__element header-banner__deal-2">
+                            <div class="header text">Happy Holiday</div>
+                            <img class="deal-image" src="<?= $block->getViewFileUrl('images/deals.png'); ?>" />
+                            <a href="#">See Today's Deals</a>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <div class="deal__element header-banner__deal-3">
+                            <div class="header text">Save big on toys</div>
+                            <img class="deal-image" src="<?= $block->getViewFileUrl('images/toys.png'); ?>" />
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <div class="deal__element header-banner__deal-4">
+                            <div class="header text">Sign in for the best experience</div>
+
+                            <a href="#" class="sign-in">Sign in securely</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-element-container">
+        <div class="element-container product-list-horizontal">
+            <div class="element-header-container">
+                <div class="header-text">Discover Amazon</div>
+                <a class="learn-more" href="#">Click to learn more</a>
+            </div>
+            <div class="product-list-slider">
+                <div class="product-container">
+                    <img class="product-container__image icons" src="<?= $block->getViewFileUrl('images/discount.png'); ?>" />
+                    <div class="title">Shop in 7 countries</div>
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image icons" src="<?= $block->getViewFileUrl('images/discount.png'); ?>" />
+                    <div class="title">Shop in 60+ currencies</div>
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image icons" src="<?= $block->getViewFileUrl('images/discount.png'); ?>" />
+                    <div class="title">Secure payments</div>
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image icons" src="<?= $block->getViewFileUrl('images/discount.png'); ?>" />
+                    <div class="title">Deals and promotions</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-element-container trending">
+        <div class="element-container product-list-horizontal">
+            <div class="element-header-container">
+                <div class="header-text">Trending in Video Games</div>
+                <a class="learn-more" href="#">Shop now</a>
+            </div>
+            <div class="product-list-slider">
+                <div class="product-container">
+                    <img class="product-container__image" src="<?= $block->getViewFileUrl('images/assassin.png'); ?>" />
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image" src="<?= $block->getViewFileUrl('images/assassin.png'); ?>" />
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image" src="<?= $block->getViewFileUrl('images/assassin.png'); ?>" />
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image" src="<?= $block->getViewFileUrl('images/assassin.png'); ?>" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-element-container">
+        <div class="element-container product-list-horizontal">
+            <div class="element-header-container">
+                <div class="header-text">Electronics Gifts under $100</div>
+                <a class="learn-more" href="#">Shop now</a>
+            </div>
+            <div class="product-list-slider">
+                <div class="product-container">
+                    <img class="product-container__image" src="<?= $block->getViewFileUrl('images/iphone.png'); ?>" />
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image" src="<?= $block->getViewFileUrl('images/iphone.png'); ?>" />
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image" src="<?= $block->getViewFileUrl('images/iphone.png'); ?>" />
+                </div>
+                <div class="product-container">
+                    <img class="product-container__image" src="<?= $block->getViewFileUrl('images/iphone.png'); ?>" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="viewed-items">
+        <div class="viewed-items-container">
+            <div class="header-title">Your recently viewed items and featured recommendations</div>
+            <div class="content-row">
+                <div class="column text">After viewing product detail pages, look here to find an easy way to navigate to pages you are interested in.</div>
+                <a class="column view-history" href="#">View or edit your browsing history</a>
+            </div>
+        </div>
+    </div>
+    <div class="gototop">
+        <a href="#" class="action">Back to top</a>
+    </div>
+</div>

@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/amazon-logo-white.png</argument>
+                <argument name="logo_img_width" xsi:type="number">111</argument>
+                <argument name="logo_img_height" xsi:type="number">36</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="content">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="pronko.amazon.content.container"
+                   template="Pronko_AmazonTheme::content.phtml" />
+        </referenceBlock>
+
+        <referenceBlock name="advanced-search-link" remove="true" />
+        <referenceBlock name="form.subscribe" remove="true" />
+        <referenceBlock name="report.bugs" remove="true" />
+
+        <referenceBlock name="footer">
+            <container name="pronko_amazon_footer_links_container"
+                       label="Amazon Footer Links"
+                       htmlTag="div"
+                       htmlClass="links"
+                       before="footer_links"
+            />
+            <container name="pronko_amazon_footer_links_container2"
+                       label="Amazon Footer Links 2"
+                       htmlTag="div"
+                       htmlClass="links"
+                       after="pronko_amazon_footer_links_container"
+            />
+            <container name="pronko_amazon_footer_links_container3"
+                       label="Amazon Footer Links 4"
+                       htmlTag="div"
+                       htmlClass="links"
+                       after="pronko_amazon_footer_links_container2"
+            />
+            <container name="pronko_amazon_footer_links_container4"
+                       label="Amazon Footer Links 4"
+                       htmlTag="div"
+                       htmlClass="links"
+                       after="pronko_amazon_footer_links_container3"
+            />
+        </referenceBlock>
+
+        <referenceContainer name="pronko_amazon_footer_links_container">
+            <block class="Magento\Framework\View\Element\Template" name="get-to-know-us"
+                   template="Pronko_AmazonTheme::footer/links/column1.phtml" />
+            <block class="Magento\Framework\View\Element\Html\Links" name="amazon_footer_links_column1" after="get-to-know-us">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links column1</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="pronko_amazon_footer_links_container2">
+            <block class="Magento\Framework\View\Element\Template" name="make-money-with-us"
+                   template="Pronko_AmazonTheme::footer/links/column2.phtml" />
+            <block class="Magento\Framework\View\Element\Html\Links" name="amazon_footer_links_column2">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links column2</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="pronko_amazon_footer_links_container3">
+            <block class="Magento\Framework\View\Element\Template" name="amazon-payment-products"
+                   template="Pronko_AmazonTheme::footer/links/column3.phtml" />
+            <block class="Magento\Framework\View\Element\Html\Links" name="amazon_footer_links_column3">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links column3</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="pronko_amazon_footer_links_container4">
+            <block class="Magento\Framework\View\Element\Template" name="let-us-help-you"
+                   template="Pronko_AmazonTheme::footer/links/column4.phtml" />
+            <block class="Magento\Framework\View\Element\Html\Links" name="amazon_footer_links_column4">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links column4</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="amazon_footer_links_column1">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="careers-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Careers</argument>
+                    <argument name="path" xsi:type="string">careers</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="blog-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Blog</argument>
+                    <argument name="path" xsi:type="string">blog</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="about-amazon-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">About Amazon</argument>
+                    <argument name="path" xsi:type="string">about-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="investor-relations-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Investor Relations</argument>
+                    <argument name="path" xsi:type="string">investor-relations</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="amazon-devices-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Amazon Devices</argument>
+                    <argument name="path" xsi:type="string">amazon-devices</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="amazon-tours-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Amazon Tours</argument>
+                    <argument name="path" xsi:type="string">amazon-tours</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <referenceBlock name="amazon_footer_links_column2">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="sell-on-amazon-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Sell on Amazon</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column2-link2-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Sell Your Services on Amazon</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column2-link3-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Sell on Amazon Business</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column2-link4-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Sell Your Apps on Amazon</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column2-link5-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Become an Affiliate</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column2-link6-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Advertise Your Products</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column2-link7-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Self-Publish with us</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column2-link8-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">See More</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <referenceBlock name="amazon_footer_links_column3">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column3-link1-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Amazon Business Card</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column3-link2-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Shop with Points</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column3-link3-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Reload Your Balance</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column3-link4-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Amazon Currency Converter</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <referenceBlock name="amazon_footer_links_column4">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column4-link1-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Your Account</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column4-link2-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Your Orders</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column4-link3-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Shipping Rates &amp; Policies</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column4-link4-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Returns &amp; Replacements</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column4-link5-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Manage Your Content and Devices</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column4-link6-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Amazon Assistant</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="column4-link7-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Help</argument>
+                    <argument name="path" xsi:type="string">sell-on-amazon</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <referenceContainer name="pronko.amazon.footer.container.switcher">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="pronko.amazon.footer.switcher"
+                   after="footer_links"
+                   template="Pronko_AmazonTheme::footer/switcher.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="footer-container">
+            <container name="pronko.amazon.footer.container.copyright" after="footer" />
+            <container name="pronko.amazon.footer.container.switcher"
+                       label="Amazon Footer Switcher"
+                       htmlTag="div"
+                       htmlClass="footer-switcher"
+                       before="pronko.amazon.footer.container.copyright" />
+        </referenceContainer>
+
+        <referenceContainer name="pronko.amazon.footer.container.copyright">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="pronko.amazon.footer.copyright"
+                   after="footer_links"
+                   template="Pronko_AmazonTheme::copyright.phtml" />
+        </referenceContainer>
+
+        <move element="copyright" destination="pronko.amazon.footer.copyright" />
+        <referenceBlock name="footer_links" remove="true" />
+
+        <referenceContainer name="header-wrapper">
+
+        </referenceContainer>
+
+        <referenceContainer name="header.container">
+            <container name="pronko_amazon_header_after_container"
+                       label="Amazon Header After Container"
+                       htmlTag="div"
+                       htmlClass="header-after"
+                       after="header-wrapper">
+                <block class="Magento\Framework\View\Element\Template"
+                       name="pronko.amazon.header.additional.content"
+                       template="Pronko_AmazonTheme::header/content.phtml" after="logo"/>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="header.panel.wrapper" remove="true" />
+        <move element="top.search" destination="header-wrapper" after="logo" />
+    </body>
+</page>

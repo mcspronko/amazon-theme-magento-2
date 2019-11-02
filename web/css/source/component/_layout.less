@@ -1,0 +1,215 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+  .header-after {
+    padding: 0 20px 20px 20px;
+    color: #fff;
+    background: #232f3e;
+
+    .header-block-container {
+      a, a:visited {
+        color: #fff;
+      }
+      .shop-deals {
+        .lib-css(font-size, 26px);
+        float: right;
+        font-weight: 600;
+      }
+      .deliver {
+        display: inline-block;
+        padding-top: 15px;
+      }
+    }
+  }
+  .header.content {
+    max-width: none !important;
+    background: #232f3e;
+    a, a:visited {
+      color: #fff !important;
+    }
+
+    .block-search {
+      width: 350px !important;
+      float: left;
+      margin-left: 50px;
+
+      .control {
+        padding: 0 0 15px !important;
+
+        input {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-radius: 5px;
+        }
+        input::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    .minicart-wrapper {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+
+      .showcart:after {
+        content: 'Cart';
+        padding-right: 5px;
+        color: #fff;
+        .lib-css(font-size, 16px);
+        font-weight: 500;
+        top: 8px;
+        position: relative;
+      }
+      .showcart:before {
+        color: #fff;
+      }
+    }
+  }
+
+  .footer.content {
+    padding-left: 0;
+    padding-right: 0;
+    background: #232F3E;
+
+    margin-top: 0;
+    border-top: none;
+
+    .links {
+      padding: 0 40px 0 0 !important;
+      li a {
+        .lib-css(font-size, 12px);
+      }
+    }
+    a, a:visited {
+      color: #fff;
+    }
+
+    .header-title {
+      .lib-css(font-size, 16px);
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer-copyright {
+    padding: 20px;
+    background: #131A22;
+    text-align: center;
+    .footer-copyright-container {
+      color: #999;
+      .lib-css(font-size, 12px);
+      display: flex;
+
+      .copyright, .extra-links {
+        flex: 1;
+      }
+
+      .extra-links {
+
+        text-align: right;
+
+        a, a:visited {
+          color: #fff;
+          margin-right: 15px;
+        }
+      }
+      .copyright {
+        margin: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  .footer-switcher {
+    border-top: 1px solid #37475A;
+    background: #232F3E;
+    color: #fff;
+    padding: 20px;
+
+    text-align: center;
+
+    .switcher-content {
+      display: flex;
+    }
+    .switcher-content__item {
+      margin: 0 auto;
+      //flex: 1;
+
+      .amazon-logo {
+        text-align: right;
+      }
+      .switcher-links {
+        text-align: left;
+        margin-left: 30px;
+      }
+      a {
+        border: 1px solid #848688;
+        padding: 10px;
+        border-radius: 3px;
+        color: #fff;
+        display: inline-block;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &.language {
+          &:before {
+            content: url('../images/globe.png');
+            vertical-align: top;
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            right: 5px;
+          }
+        }
+        &.currency {
+          &:before {
+            content: '$';
+            vertical-align: top;
+            display: inline-block;
+            position: relative;
+            right: 5px;
+          }
+        }
+        &.country {
+          &:before {
+            content: url('../images/usa-flag.png');
+            vertical-align: top;
+            display: inline-block;
+            position: relative;
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .page-wrapper {
+    background: #EAEDED;
+  }
+
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .logo {
+    margin: 0 auto 10px 0;
+  }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
